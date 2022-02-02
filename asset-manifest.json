@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/sushi_got/static/css/main.059169aa.css",
+    "main.js": "/sushi_got/static/js/main.9447872d.js",
+    "static/js/787.7cd6989d.chunk.js": "/sushi_got/static/js/787.7cd6989d.chunk.js",
+    "static/media/game-of-thrones-go-t.gif": "/sushi_got/static/media/game-of-thrones-go-t.8c78e86d6f4690d2a6d9.gif",
+    "static/media/lannister_logo.png": "/sushi_got/static/media/lannister_logo.859f9f3f670ef80a2b35.png",
+    "static/media/e41.jpg": "/sushi_got/static/media/e41.b9ae36dfad738e95eadc.jpg",
+    "static/media/stark_logo.png": "/sushi_got/static/media/stark_logo.5f770926a211afcbfe4c.png",
+    "static/media/throne.jpg": "/sushi_got/static/media/throne.539522c02d330957ddbf.jpg",
+    "static/media/logo_got.jpg": "/sushi_got/static/media/logo_got.72cfdbff1f91776e168b.jpg",
+    "static/media/dany_targaryen.jpg": "/sushi_got/static/media/dany_targaryen.c07e821c6e647793b545.jpg",
+    "static/media/png": "/sushi_got/static/media/84266e4af61781fab55f978def5a7f8e.0ea9855a9faa621ff1d3.png",
+    "static/media/tyrion_lannister.jpg": "/sushi_got/static/media/tyrion_lannister.9d578be2751b033bef1b.jpg",
+    "static/media/bran_stark.jpg": "/sushi_got/static/media/bran_stark.5b653aea4a9bb07cfdb6.jpg",
+    "static/media/winterfell.jpg": "/sushi_got/static/media/winterfell.70a9582255e52be5a7e9.jpg",
+    "static/media/targaryen_logo.png": "/sushi_got/static/media/targaryen_logo.0ec3facfa18ec311fb7f.png",
+    "static/media/viserys_targaryen.jpg": "/sushi_got/static/media/viserys_targaryen.4d71e24cd3796cf3c79f.jpg",
+    "static/media/cercei_lannister.jpg": "/sushi_got/static/media/cercei_lannister.5b44158bf0b176203d4e.jpg",
+    "static/media/ned_stark.jpg": "/sushi_got/static/media/ned_stark.45770997c7c72697022e.jpg",
+    "static/media/mobgotsigpatt.jpg": "/sushi_got/static/media/mobgotsigpatt.5f7e8d8c510d908aec4c.jpg",
+    "static/media/joffrey_lannister.jpg": "/sushi_got/static/media/joffrey_lannister.204742ebdadf8d31ad02.jpg",
+    "static/media/img-carrito.png": "/sushi_got/static/media/img-carrito.af61a77dbdd37a5d3f75.png",
+    "static/media/jaime_lannister.jpeg": "/sushi_got/static/media/jaime_lannister.d254091f0c5836e5df05.jpeg",
+    "static/media/arya_stark.jpg": "/sushi_got/static/media/arya_stark.e336d18ce8096efbb8d8.jpg",
+    "index.html": "/sushi_got/index.html",
+    "main.059169aa.css.map": "/sushi_got/static/css/main.059169aa.css.map",
+    "main.9447872d.js.map": "/sushi_got/static/js/main.9447872d.js.map",
+    "787.7cd6989d.chunk.js.map": "/sushi_got/static/js/787.7cd6989d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.059169aa.css",
+    "static/js/main.9447872d.js"
+  ]
+}
