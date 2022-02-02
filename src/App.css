@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+
 .App {
   text-align: center;
 }
@@ -35,4 +38,198 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.got_bg {
+  background-image: url("../src/media/mobgotsigpatt.jpg");
+  min-height: 93.5vh;
+}
+
+.loading_bg {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color:black;
+  padding-top: 13rem;
+  padding-bottom: 5rem;
+  height:100vh;
+}
+
+.card_name {
+  font-family: 'Dongle', sans-serif;
+  font-size: 2rem;
+  padding: 0px;
+  margin: 0px;
+}
+
+.card_img {
+  min-height: auto;
+  max-height: 207px;
+}
+
+.card_quote {
+  min-height: 70px;
+  max-height: 70px;
+  font-family: 'Dongle', sans-serif;
+  font-size: 1.5rem;
+  padding: 5px;
+  margin: 10px 0px;
+  background-color: rgba(0, 0, 0, 0.623);
+}
+
+.card_house {
+  width:70px;
+  align-self: center;
+  padding-bottom: 0.6rem;
+}
+
+.card_points {
+  font-family: 'Dongle', sans-serif;
+  font-size: 0.8rem;
+  padding-top: 0.2rem;
+  margin-bottom: 0px;
+  padding-bottom: 0.2rem;
+}
+
+.cardDetail_name {
+  font-family: 'Dongle', sans-serif;
+  font-size: 4rem;
+  padding-top: 10px;
+  margin: 0px;
+}
+
+.cardDetail_img {
+  min-height: 35rem;
+  max-height: 35rem;
+  margin: 0px 20px;
+}
+
+.cardDetail_house {
+  width: 200px;
+  align-self: center;
+  padding: 0.6rem 0px;
+}
+
+.cardDetail_quote {
+  min-height: 180px;
+  max-height: 180px;
+  font-family: 'Dongle', sans-serif;
+  font-size: 4rem;
+  padding: 5px;
+  margin: 0px 15px 15px 15px;
+  background-color: rgba(0, 0, 0, 0.623);
+}
+
+.card_points {
+  font-family: 'Dongle', sans-serif;
+  font-size: 0.8rem;
+  padding-top: 0.2rem;
+  margin-bottom: 0px;
+  padding-bottom: 0.2rem;
+}
+
+.ImgCart {
+  width: 10rem;
+}
+
+.BannerCart {
+  width: 5rem;
+}
+
+.cartAdder {
+  background-color:rgb(71, 70, 70);
+  font-family: 'Dongle', sans-serif;
+  font-size: 2rem;
+  color: white;
+}
+
+.bg_throne {
+  background-image: url("./media/e41.jpg");
+  min-height: 93.5vh;
+
+}
+
+
+.titleFont {
+  font-family: 'Cinzel', serif;
+  font-size: 8rem;
+  padding-top: 14rem;
+  color: transparent;
+  background-clip: padding-box;
+  background-image: linear-gradient(
+    to right,
+    #462523 0,
+    #cb9b51 22%,
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    #cb9b51 78%,
+    #462523 100%);
+  -webkit-background-clip: text;
+	-webkit-text-stroke: 2px black;
+}
+
+.textFont {
+  font-family: 'Cinzel', serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: transparent;
+  background-clip: padding-box;
+  background-image: linear-gradient(
+    to right,
+    #462523 0,
+    #cb9b51 22%,
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    #cb9b51 78%,
+    #462523 100%);
+  padding: 0.5rem 0rem;
+  -webkit-background-clip: text;
+}
+
+.textpadding {
+  padding-top: 14rem;
+}
+
+.cardShow{
+  margin: 0.5rem;
+  margin-bottom: auto;
+}
+
+.cardShow_name {
+  font-family: 'Dongle', sans-serif;
+  font-size: 1rem;
+  padding-top: 3px;
+  margin: 0px;
+}
+
+.cardShow_img {
+  min-height: 8rem;
+  max-height: 8rem;
+  margin: 0px 10px;
+}
+
+.cardShow_house {
+  width: 40px;
+  align-self: center;
+  padding: 0.6rem 0px;
+}
+
+.cardShow_quote {
+  min-height: 60px;
+  max-height: 60px;
+  font-family: 'Dongle', sans-serif;
+  font-size: 0.8rem;
+  padding: 5px;
+  margin: 0px 15px 5px 15px;
+  background-color: rgba(0, 0, 0, 0.623);
+}
+
+.cardShow_points {
+  font-family: 'Dongle', sans-serif;
+  font-size: 0.5rem;
+  padding-top: 0.2rem;
+  margin-bottom: 0px;
+  padding-bottom: 0.2rem;
 }

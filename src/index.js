@@ -3,6 +3,21 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBm9ZYNuY27Hpi7p3UwF7RpUb_fLFOGAjE",
+  authDomain: "sushi-got.firebaseapp.com",
+  projectId: "sushi-got",
+  storageBucket: "sushi-got.appspot.com",
+  messagingSenderId: "943191561817",
+  appId: "1:943191561817:web:ac02fca8d6861d16d8c348",
+  measurementId: "G-WVSQ8MHNNF"
+};
+
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
 ReactDOM.render(
   <React.StrictMode>
