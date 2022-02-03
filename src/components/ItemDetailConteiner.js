@@ -1,8 +1,7 @@
 import React, {useEffect, useState} from "react";
 import { useParams } from "react-router-dom";
 import ItemDetail from "./ItemDetail";
-import { collection, getDocs, getDoc, doc, getFirestore, where, query, limit } from "firebase/firestore";
-import ButtonFunct from "./Commons";
+import { collection, getDocs, getFirestore, where, query, limit } from "firebase/firestore";
 import GotLogo from "../media/logo_got.jpg";
 import NavBar from './NavBar';
 
@@ -18,12 +17,6 @@ const DetailContainer = () => {
 
     useEffect(() => {
         
-        // const data = doc (db, "Cards", id)
-        
-        // getDoc(data).then((snapshot)=>{
-        //     setCarta([snapshot.data()])
-        // })
-
         const q = query(collection(db, "Cards"), where("link","==", id),limit(1));
 
         getDocs(q).then((snapshot) => {

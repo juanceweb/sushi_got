@@ -1,12 +1,12 @@
 import React from "react";
 import CartContext from "../contexts/CartContext";
-import {useContext, useState, useEffect} from "react";
+import {useContext, useState} from "react";
 import ButtonFunct from "./Commons";
 import { NavLink } from "react-router-dom";
 import NavBar from './NavBar';
 import CartItem from "./CartItem"
 import GotLogo from "../media/logo_got.jpg";
-import { addDoc, getDoc, doc, collection, getFirestore, where, query, updateDoc } from "firebase/firestore";
+import { getDoc, doc, getFirestore, updateDoc } from "firebase/firestore";
 
 
 
@@ -18,34 +18,6 @@ const CartBody = () => {
     const [loading, setLoading] = useState(false)
 
     const db = getFirestore();
-
-
-    // function cart_close(cards) {
-    //     for (const card of cards) {
-
-    //         const data = doc (db, "Cards", card.id)
-
-    //         getDoc(data).then((snapshot)=>{
-    //             let stock = snapshot.data().stock
-
-    //             let new_stock = stock - card.cantidad
-
-    //             updateDoc(data, {stock: new_stock})
-    //         })
-    //     }
-    //     context.wype()
-    // }
-
-    // async function cart_final (cards){
-    //     let response = check_stocks(cards)
-    //     console.log(response)
-    //     if (response) {
-    //         cart_close(cards)
-    //     }
-    //     else {
-    //         console.log("response era false");
-    //     }
-    // }
 
     const handleClick = async (cards) => {
 
@@ -96,25 +68,6 @@ const CartBody = () => {
             setLoading(false)
         }, timer);
     }
-
-    // useEffect(() => {
-    //     setLoading(true)
-    // },[timer]);
-
-    // const sendOrder = (arr) =>{
-
-    //     const order = {
-    //         buyer: { name: "juan", phone:"55555", email: "test@test.com"},
-    //         items: arr.map((card) => (
-    //             {nombre: card.nombre, precio: card.precio , cantidad: card.cantidad, total_parcial: card.precio*card.cantidad } ))
-    //     }
-    //     const ordersCollection = collection(db, "orders")
-
-    //     addDoc(ordersCollection, order).then(({id}) =>{
-    //         console.log(id)
-    //     })
-    // }
-
 
     if (loading) {
         return (

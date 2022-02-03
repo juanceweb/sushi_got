@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from "react";
 import FunctItemList from "./ItemList"
-import ButtonFunct from "./Commons";
 import NavBar from './NavBar';
 import GotLogo from "../media/logo_got.jpg";
 import { collection, getDocs, getFirestore } from "firebase/firestore";

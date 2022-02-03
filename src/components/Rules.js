@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import NavBar from './NavBar';
 import Card from './Card';
 
@@ -16,10 +16,10 @@ const Rules = () => {
             <NavBar />
             <div className="App got_bg text-center pt-5 container-fluid">
                 <h1 className="titleFont">RULES</h1>
-                        <div className="card container-fluid p-3 m-1">
+                        <div className="card container-fluid p-3 m-1 bgGold">
                             <div className="row">
                                 <div className="col-6">
-                                    <div className="card">
+                                    <div className="card bgSilver">
                                         <div className="card-body">
                                             <h3 className="card-title">CONTENTS</h3>
                                             <h4>108 Cards</h4>
@@ -102,7 +102,7 @@ const Rules = () => {
                                     </div>
                                 </div>
                                 <div className="col-6">
-                                    <div className="card">
+                                    <div className="card bgBrass">
                                         <div className="card-body">
                                             <h3 className="card-title">HOW TO PLAY</h3>
                                             <h4>PLAYING AROUND</h4>
@@ -128,10 +128,10 @@ const Rules = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="card container-fluid p-3 m-1">
+                        <div className="card bgGold container-fluid p-3 m-1">
                             <div className="row">
                                 <div className="col-6">
-                                    <div className="card">
+                                    <div className="card bgBrass">
                                         <div className="row justify-content-center pt-3">
                                             <Card card={targaryen}/>
                                             <div className="col-8 px-5">
@@ -158,7 +158,7 @@ const Rules = () => {
                                     </div>
                                 </div>
                                 <div className="col-6">
-                                    <div className="card">
+                                    <div className="card bgSilver">
                                         <div className="card-body">
                                             <h3 className="card-title">SCORING</h3>
                                             <div className="row justify-content-center">
@@ -206,10 +206,10 @@ const Rules = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="card container-fluid p-3 m-1">
+                        <div className="card bgGold container-fluid p-3 m-1">
                             <div className="row">
                                 <div className="col-6">
-                                    <div className="card">
+                                    <div className="card bgSilver">
                                         <div className="card-body">
                                             <div className="row justify-content-center">
                                                 <Card card={targaryen}/>
@@ -231,15 +231,29 @@ const Rules = () => {
                                     </div>
                                 </div>
                                 <div className="col-6">
-                                    <div className="card">
+                                    <div className="card bgBrass">
                                         <div className="card-body">
                                             <div className="row justify-content-center">
+                                                <Card card={targaryen}/>
+                                                <Card card={targaryen}/>
+                                                <div className="col-4 px-5">
+                                                    <h4 className="pt-5">TARGARYEN AND DRAGONS</h4>
+                                                    <p className="pt-5">Drogon scores 3 points. If on top of a targaryen card it scores 9 points.
+                                                    </p>
+                                                    <p>Vyserion scores 2 points. If on top of a targaryen card it scores 6 points.
+                                                    </p>
+                                                    <p>Rhegal scores 1 point. If on top of a targaryen card it scores 3 points.</p>
+                                                    <p>A targaryen card alone scores nothing.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div className="row justify-content-center pt-2">
+                                                <Card card={targaryen}/>
                                                 <div className="col-8 px-5">
                                                     <h4 className="pt-5">COUNSIL</h4>
                                                     <p className="pt-5">A chopsticks card scores nothing.
                                                     </p>
                                                 </div>
-                                                <Card card={targaryen}/>
                                             </div>
                                         </div>
                                     </div>

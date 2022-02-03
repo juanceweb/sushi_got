@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useContext} from "react";
+import React, {useState, useContext} from "react";
 import CartContext from "../contexts/CartContext";
 import ButtonFunct from "./Commons";
 import QuantityAddRest from "./QuantityFunct"
@@ -12,14 +12,6 @@ const AddToCart = ({stockBase, price, card}) => {
     const [stock, setStock] = useState(stockBase)
 
     const context = useContext(CartContext)
-
-    // const add = () => {
-    //     (cantidad < stock ) ? setCantidad((prev) => prev + 1) : console.log("stock max");
-    // }
-
-    // const rest = () => {
-    //     (cantidad > 1 ) ? setCantidad((prev) => prev - 1) : console.log("stock min");
-    // }
 
     return (
         <div className="container-fluid cartAdder">

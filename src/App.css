@@ -136,6 +136,19 @@
   width: 5rem;
 }
 
+
+.bgGold {
+  background-color: rgb(145, 123, 2)!important;
+}
+
+.bgSilver {
+  background-color: rgb(165, 163, 163)!important
+}
+
+.bgBrass {
+  background-color: rgba(168, 67, 67, 0.712) !important;
+}
+
 .cartAdder {
   background-color:rgb(71, 70, 70);
   font-family: 'Dongle', sans-serif;
@@ -149,11 +162,13 @@
 
 }
 
+.paddingTopSushiGot{
+  padding-top: 14rem;
+}
 
 .titleFont {
   font-family: 'Cinzel', serif;
   font-size: 8rem;
-  padding-top: 14rem;
   color: transparent;
   background-clip: padding-box;
   background-image: linear-gradient(

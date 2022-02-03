@@ -17,7 +17,7 @@ function App() {
     <CustomContext>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<SushiGot />}></Route>
+          <Route path="/sushi_got" element={<SushiGot />}></Route>
           <Route path="/rules" element={<Rules />}></Route>
           <Route path="/all_cards" element={<ListContainer />}></Route>
           <Route path="/category/:id" element={<ListContainer />}></Route>
