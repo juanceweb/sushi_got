@@ -6,12 +6,12 @@ const ItemDetail = ({card}) => {
     return (
         <div className="container-fluid">
             <div className="row d-flex justify-content-center">
-                <div className={"col-6 border d-flex justify-content-center border-dark border-3 mt-3 px-0"}>
+                <div className={"col-5 border d-flex justify-content-center border-dark border-3 mt-3 px-0"}>
                     <AddToCart stockBase={card?.stock} price={card?.price} card={card}/>
                 </div>
             </div>
             <div className="row d-flex justify-content-center">
-                <div className={`col-6 cardDetail card mx-5 my-3 border border-dark border-3 ${card?.colour}`}>
+                <div className={`col-5 cardDetail card mx-5 my-3 border border-dark border-3 ${card?.colour}`}>
                     <h3 className="cardDetail_name text-white">{card?.name?.toUpperCase()}</h3>
                     <img src={require(`../media/${card?.img}`)} className="cardDetail_img border border-dark border-2 img-fluid" alt="..."></img>
                     <img src={require(`../media/${card.banner}`)} className="cardDetail_house img-fluid"></img>

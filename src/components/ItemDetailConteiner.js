@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import { useParams } from "react-router-dom";
 import ItemDetail from "./ItemDetail";
-import { collection, getDocs, getFirestore, where, query, limit } from "firebase/firestore";
+import { collection, getDocs,  getFirestore, where, query, limit } from "firebase/firestore";
 import GotLogo from "../media/logo_got.jpg";
 import NavBar from './NavBar';
 
@@ -13,10 +13,11 @@ const DetailContainer = () => {
 
     const [loading, setLoading] = useState(true)
 
-    const db = getFirestore();
 
     useEffect(() => {
         
+        const db = getFirestore();
+
         const q = query(collection(db, "Cards"), where("link","==", id),limit(1));
 
         getDocs(q).then((snapshot) => {
