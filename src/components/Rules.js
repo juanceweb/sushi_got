@@ -1,6 +1,13 @@
 import React from "react";
 import NavBar from './NavBar';
 import Card from './Card';
+import tar from "../media/tar.png";
+import cou from "../media/cou.png"
+import sta from "../media/sta.png"
+import fig from "../media/fig.png"
+import ban from "../media/ban.png"
+import lan from "../media/lan.png"
+import dra from "../media/dra.png"
 
 const Rules = () => {
 
@@ -114,7 +121,7 @@ const Rules = () => {
                                             NOTE: Face-up cards remain with you until the end of the round, when they are scored. It is helpful to group cards of the same type together.
                                             </p>
                                             <div className="row justify-content-center">
-                                                <Card card={targaryen}/>
+                                                <Card imagen={tar} size={"102%"}/>
                                                 <div className="col-8 px-5">
                                                     <h4 className="pt-3">USING TARGARYEN</h4>
                                                     <p className="pt-3">If you choose a squid, salmon or egg nigiri card, and already have a wasabi card in front of you then this nigiri must be placed on top of the wasabi. This is to show that the nigiri has been dipped in wasabi and has tripled in value!
@@ -133,7 +140,7 @@ const Rules = () => {
                                 <div className="col-6">
                                     <div className="card bgBrass">
                                         <div className="row justify-content-center pt-3">
-                                            <Card card={targaryen}/>
+                                            <Card imagen={cou} size={"102%"}/>
                                             <div className="col-8 px-5">
                                                 <h4 className="pt-3">USING COUNSIL</h4>
                                                 <p className="pt-3">If you already have a chopsticks card in front of you, you may take 2 sushi cards on a future turn!
@@ -162,7 +169,7 @@ const Rules = () => {
                                         <div className="card-body">
                                             <h3 className="card-title">SCORING</h3>
                                             <div className="row justify-content-center">
-                                                <Card card={targaryen}/>
+                                                <Card imagen={fig} size={"85%"}/>
                                                 <div className="col-8 px-5">
                                                     <h4 className="pt-3">FIGHTERS</h4>
                                                     <p className="pt-3">Each player adds up the maki roll icons at the top of all their maki roll cards. The player with the most icons scores 6 points. If multiple players tie for the most, they split the 6 points evenly (ignoring any remainder) and no second place points are awarded.
@@ -199,7 +206,7 @@ const Rules = () => {
                                                         </tbody> 
                                                     </table>   
                                                 </div>
-                                                <Card card={targaryen}/>
+                                                <Card imagen={ban} size={"90%"}/>
                                             </div>
                                         </div>
                                     </div>
@@ -212,7 +219,7 @@ const Rules = () => {
                                     <div className="card bgSilver">
                                         <div className="card-body">
                                             <div className="row justify-content-center">
-                                                <Card card={targaryen}/>
+                                                <Card imagen={sta} size={"105%"}/>
                                                 <div className="col-8 px-5">
                                                     <h4 className="pt-3">STARK</h4>
                                                     <p className="pt-3">A set of 2 tempura cards scores 5 points. A single tempura card is worth nothing. You may score multiple sets of tempura in a round.
@@ -225,7 +232,7 @@ const Rules = () => {
                                                     <p className="pt-5">A set of 3 sashimi cards scores 10 points. A single sashimi card or a set of only 2 is worth nothing. You may score multiple sets of sashimi in a round, although this is very hard to do!
                                                     </p>
                                                 </div>
-                                                <Card card={targaryen}/>
+                                                <Card imagen={lan} size={"105%"}/>
                                             </div>
                                         </div>
                                     </div>
@@ -234,8 +241,8 @@ const Rules = () => {
                                     <div className="card bgBrass">
                                         <div className="card-body">
                                             <div className="row justify-content-center">
-                                                <Card card={targaryen}/>
-                                                <Card card={targaryen}/>
+                                                <Card imagen={tar} size={"70%"}/>
+                                                <Card imagen={dra} size={"70%"}/>
                                                 <div className="col-4 px-5">
                                                     <h4 className="pt-5">TARGARYEN AND DRAGONS</h4>
                                                     <p className="pt-5">Drogon scores 3 points. If on top of a targaryen card it scores 9 points.
@@ -248,7 +255,7 @@ const Rules = () => {
                                                 </div>
                                             </div>
                                             <div className="row justify-content-center pt-2">
-                                                <Card card={targaryen}/>
+                                                <Card imagen={cou} size={"70%"}/>
                                                 <div className="col-8 px-5">
                                                     <h4 className="pt-5">COUNSIL</h4>
                                                     <p className="pt-5">A chopsticks card scores nothing.

@@ -63,31 +63,36 @@
 }
 
 .card_img {
-  min-height: auto;
-  max-height: 207px;
+  min-height: 220px;
+  max-height: 220px;
 }
 
 .card_quote {
-  min-height: 70px;
-  max-height: 70px;
+  min-height: 90px;
+  max-height: 90px;
   font-family: 'Dongle', sans-serif;
   font-size: 1.5rem;
   padding: 5px;
   margin: 10px 0px;
   background-color: rgba(0, 0, 0, 0.623);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
 
 .card_house {
-  width:70px;
+  min-height: 70px;
+  max-height: 70px;
   align-self: center;
 }
 
 .card_points {
   font-family: 'Dongle', sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.5rem;
   padding-top: 0.2rem;
   margin-bottom: 0px;
-  padding-bottom: 0.2rem;
+  padding-bottom: 0rem;
 }
 
 .cardDetail_name {
@@ -240,44 +245,4 @@
   padding-top: 14rem;
 }
 
-.cardShow{
-  margin: 0.5rem;
-  margin-bottom: auto;
-}
 
-.cardShow_name {
-  font-family: 'Dongle', sans-serif;
-  font-size: 1rem;
-  padding-top: 3px;
-  margin: 0px;
-}
-
-.cardShow_img {
-  min-height: 8rem;
-  max-height: 8rem;
-  margin: 0px 10px;
-}
-
-.cardShow_house {
-  width: 40px;
-  align-self: center;
-  padding: 0.6rem 0px;
-}
-
-.cardShow_quote {
-  min-height: 60px;
-  max-height: 60px;
-  font-family: 'Dongle', sans-serif;
-  font-size: 0.8rem;
-  padding: 5px;
-  margin: 0px 15px 5px 15px;
-  background-color: rgba(0, 0, 0, 0.623);
-}
-
-.cardShow_points {
-  font-family: 'Dongle', sans-serif;
-  font-size: 0.5rem;
-  padding-top: 0.2rem;
-  margin-bottom: 0px;
-  padding-bottom: 0.2rem;
-}
