@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 import NavBar from './NavBar';
 import CartItem from "./CartItem"
 import GotLogo from "../media/logo_got.jpg";
-import { getDoc, doc, getFirestore, updateDoc } from "firebase/firestore";
+import { getDoc, doc, getFirestore, updateDoc, addDoc, collection } from "firebase/firestore";
 
 
 
@@ -18,6 +18,24 @@ const CartBody = () => {
     const [loading, setLoading] = useState(false)
 
     const db = getFirestore();
+
+    const sendOrder = (cards) => {
+
+        let items1 = []
+
+        cards.map((card, index)=> {
+            items1.push ({name: card.nombre, price: card.precio, cantidad: card.cantidad})
+        })
+
+        const order = {
+            buyer: {name:"Juan", phone: "112233", email:"test@mail.com"},
+            items: items1,
+        }
+
+        const ordersCollection = collection(db, "Orders");
+
+        addDoc(ordersCollection, order).then(({id}) => console.log(id))
+    }
 
     const handleClick = async (cards) => {
 
@@ -61,6 +79,7 @@ const CartBody = () => {
                 })
             }
             console.log("Gracias por su compra");
+            sendOrder(cards)
             context.wype()
         }
 
